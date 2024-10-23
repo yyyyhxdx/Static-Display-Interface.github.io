@@ -12,27 +12,25 @@
             background-repeat: no-repeat;
             background-position: center center;
             font-family: Arial, sans-serif; 
+            margin: 0;
+            padding: 0;
         }
         h1, h2 {
             color: lightcoral; 
             text-align: center; 
+            margin: 0.5em 0;
         }
         figure {
-            display: inline-block; 
+            display: block; 
             width: 100%;
             text-align: center; 
-        }
-        figure.single-row {
-            display: block;
+            margin-bottom: 1em; /* Add some space below each figure */
         }
         img {
-            max-width: 700px; 
+            max-width: 100%; /* Adjust image width to fit the screen */
             height: auto; 
-            display: inline-block; 
+            display: block; /* Remove inline-block to avoid text alignment issues */
             margin: 0 auto; 
-        }
-        img.long-image {
-            max-width: 1000px; 
         }
         figcaption {
             text-align: center; 
@@ -40,13 +38,22 @@
             color: blue; 
             font-weight: bold; 
         }
+        /* Media query for mobile devices */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5em; /* Reduce header font size on small screens */
+            }
+            h2 {
+                font-size: 1.2em; /* Reduce subheader font size on small screens */
+            }
+        }
     </style>
 </head>
 <body>
     <h1>RGen: A Real-Time Pattern Mining Approach to Target Generation for Internet-wide IPv6 Scanning</h1>
     <h2>RGen:一种用于互联网范围IPv6扫描目标生成的实时模式挖掘方法</h2>
     <!-- Page content -->
-    <figure class="single-row">
+    <figure>
         <img src="figure6.png" alt="Descriptive Text" class="long-image">
         <figcaption>SCANNING RESULTS (BUDGET 100M)</figcaption>
     </figure>
@@ -62,7 +69,7 @@
         <img src="figure9.png" alt="Descriptive Text">
         <figcaption>Number of Patterns</figcaption>
     </figure>
-    <figure class="single-row">
+    <figure>
         <img src="figure10.png" alt="Descriptive Text" class="long-image">
         <figcaption>Distribution of Variable Positions in 1st-order Patterns</figcaption>
     </figure>
