@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static Display Interface</title>
+    <style>
+        body {
+            background-image: url('背景图片.jpg'); 
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center center;
+            font-family: Arial, sans-serif; 
+        }
+        h1, h2 {
+            color: lightcoral; 
+            text-align: center; 
+        }
+        figure {
+            display: inline-block; 
+            width: 100%;
+            text-align: center; 
+        }
+        figure.single-row {
+            display: block;
+        }
+        img {
+            max-width: 700px; 
+            height: auto; 
+            display: inline-block; 
+            margin: 0 auto; 
+        }
+        img.long-image {
+            max-width: 1000px; 
+        }
+        figcaption {
+            text-align: center; 
+            margin-top: 0.5em; 
+            color: blue; 
+            font-weight: bold; 
+        }
+    </style>
+</head>
+<body>
+    <h1>RGen: A Real-Time Pattern Mining Approach to Target Generation for Internet-wide IPv6 Scanning</h1>
+    <h2>RGen:一种用于互联网范围IPv6扫描目标生成的实时模式挖掘方法</h2>
+    <!-- Page content -->
+    <figure class="single-row">
+        <img src="figure6.png" alt="Descriptive Text" class="long-image">
+        <figcaption>SCANNING RESULTS (BUDGET 100M)</figcaption>
+    </figure>
+    <figure>
+        <img src="figure7.png" alt="Descriptive Text">
+        <figcaption>Hit Rate</figcaption>
+    </figure>
+    <figure>
+        <img src="figure8.png" alt="Descriptive Text">
+        <figcaption>Aliased Ratio(%)</figcaption>
+    </figure>
+    <figure>
+        <img src="figure9.png" alt="Descriptive Text">
+        <figcaption>Number of Patterns</figcaption>
+    </figure>
+    <figure class="single-row">
+        <img src="figure10.png" alt="Descriptive Text" class="long-image">
+        <figcaption>Distribution of Variable Positions in 1st-order Patterns</figcaption>
+    </figure>
+    <figure>
+        <img src="figure11.png" alt="Descriptive Text">
+        <figcaption>The proportion of targets and hits in 1st-order patterns</figcaption>
+    </figure>
+    <figure>
+        <img src="figure12.png" alt="Descriptive Text">
+        <figcaption>The hit rates of 1st-order patterns and higher-order patterns</figcaption>
+    </figure>
+    <figure>
+        <img src="figure13.png" alt="Descriptive Text">
+        <figcaption>Running Time (min)</figcaption>
+    </figure>
+    <figure>
+        <img src="figure14.png" alt="Descriptive Text">
+        <figcaption>Memory Usage (GB)</figcaption>
+    </figure>
+</body>
+</html>
